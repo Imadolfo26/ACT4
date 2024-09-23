@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang=”es”>
+<head>
+    <meta charset=”UTF-8”>
+    <meta name=”viewport” content=”with-device, initial-scale=1.0”>
+    <title>Registro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="register-card">
+        <h2>Formulario de Registro</h2>
+        <form>
+            <div class="card">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" id="nombre" class="form-control" placeholder="Obligatorio" required>
+
+                <label for="apellido1" class="form-label">Primer Apellido</label>
+                <input type="text" id="apellido1" class="form-control" placeholder="Obligatorio" required>
+
+                <label for="apellido2" class="form-label">Segundo Apellido</label>
+                <input type="text" id="apellido2" class="form-control" placeholder="Opcional">
+
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" id="telefono" class="form-control" placeholder="Obligatorio" required>
+
+                <label for="correo" class="form-label">Correo Electrónico</label>
+                <input type="email" id="correo" class="form-control" placeholder="Obligatorio" required>
+            </div>
+
+            <div class="grid-container">
+                <div class="card">
+                    <h3>Datos Escolares</h3>
+                    <label for="matricula" class="form-label">Matrícula</label>
+                    <input type="text" id="matricula" class="form-control" placeholder="Obligatorio" required>
+
+                    <label for="carrera" class="form-label">Carrera</label>
+                    <select id="carrera" class="form-control" required>
+                        <option value="">Selecciona tu carrera</option>
+                        <option value="Licenciatura Negocios Internacionales">L.N.I</option>
+                        <option value="Licenciatura Contador Publico">C.P</option>
+                        <option value="Licenciatura Administracion">L.A</option>
+                        <option value="Licenciatura Tecnologias de la informacion">L.T.I</option>
+                        <option value="Licenciatura Emprendimiento e Innovacion">L.E.I</option>
+                    </select>
+
+                    <label for="semestre" class="form-label">Semestre Actual</label>
+                    <select id="semestre" class="form-control" required>
+                        <option value=””>Selecciona tu semestre</option>
+                        <option value="1">1º</option>
+                        <option value="2">2º</option>
+                        <option value="3">3º</option>
+                        <option value="4">4º</option>
+                        <option value="5">5º</option>
+                        <option value="6">6º</option>
+                        <option value="7">7º</option>
+                        <option value="8">8º</option>
+                        <option value="9">9º</option>
+                        <option value="10">10º</option>
+                    </select>
+
+                    <label for="promedio" class="form-label">Promedio</label>
+                    <input type="text" id="promedio" class="form-control" placeholder="Opcional">
+                </div>
+
+
+                <div class="card">
+                    <h3>Datos de Inicio de Sesión</h3>
+                    <label for="cuenta" class="form-label">Cuenta</label>
+                    <input type="text" id="cuenta" class="form-control" placeholder="Obligatorio" required>
+
+                    <label for="password1" class="form-label">Contraseña</label>
+                    <input type="password" id="password1" class="form-control" placeholder="Obligatorio" required>
+
+                    <label for="password2" class="form-label">Confirmar Contraseña</label>
+                    <input type="password" id="password2" class="form-control" placeholder="Obligatorio" required>
+                </div>
+            </div>
+
+            <div class="alert">
+                <input type="checkbox" id="confidencialidad">
+                <label for="confidencialidad">Aviso de Confidencialidad</label>
+            </div>
+
+            <button type="submit" class="btn-register">
+                <i class="fas fa-user-plus"></i> Registrar
+            </button>
+            <button type="reset" class="btn-cancel">
+                <i class="fas fa-times"></i> Cancelar
+            </button>
+        </form>
+    </div>
+</body>
+</html>
+
